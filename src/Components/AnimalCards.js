@@ -1,13 +1,12 @@
-import Buttons from './Buttons';
+import Buttons from './Button';
 import classes from './AnimalCards.module.css';
 
 
-const AnimalCards = (prop) => {
+const AnimalCards = (props) => {
     return (
         <div className={classes.container}>
-            Testing Animal cards
-            <div>{prop.name}</div>
-            <div>{prop.likes}</div>
+            <div>{props.name}</div>
+            <div>{props.likes}</div>
             <Buttons></Buttons>
         </div>
 
