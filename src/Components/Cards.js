@@ -1,17 +1,16 @@
 import Buttons from './Button';
 import classes from './AnimalCards.module.css';
+import React from "react";
 
 
-const AnimalCards = (props) => {
+const Cards = (props) => {
     return (
         <div className={classes.container}>
-            <div>{props.name}</div>
-            <div>{props.likes}</div>
+            <div>{props.name}Name</div>
+            <div>{props.likes}Likes</div>
             <Buttons></Buttons>
         </div>
-
-
-)
+    );
 };
 
-export default AnimalCards;
+export default Cards;

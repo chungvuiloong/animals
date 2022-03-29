@@ -1,4 +1,4 @@
-export const animals = [
+const animals = [
   { name: 'alligator', likes: 0 },
   { name: 'alpaca', likes: 0 },
   { name: 'ant', likes: 0 },
@@ -119,3 +119,5 @@ export const animals = [
   { name: 'yak', likes: 0 },
   { name: 'zebra', likes: 0 },
 ];
+
+export default animals;
