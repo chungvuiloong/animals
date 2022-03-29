@@ -1,6 +1,8 @@
+import classes from './Buttons.module.css'
+
 const Buttons = () => {
     return (
-        <button>
+        <button className={classes.buttons}>
             Button
         </button>
 
