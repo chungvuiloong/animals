@@ -8,27 +8,14 @@ import Box from './Box';
 const App = () => {
   return (
     <div className="App">
-      {animals.map((animal) => { 
-        // console.log(animal);
-        console.log(animal.name);
+
+      {animals.map((animal) => (
         <Cards 
           key={animal.name}
           name={animal.name} 
-          likes={animal.likes}/>
-
-      })}
-
-      {animals.map((animal) => { 
-        <Box 
-          key={animal.name}
-          name={animal.name} 
-          likes={animal.likes}></Box>
-
-      })}
-      
-      <Cards/>
-      
-
+          likes={animal.likes}
+          Buttons={animal.Buttons}/>
+          ))}
     </div>
   );
 }
