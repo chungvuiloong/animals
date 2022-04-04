@@ -1,6 +1,6 @@
 import classes from './Button.module.css'
 
-const Button = () => {
+const Buttons = () => {
     return (
         <button className={classes.button}>
             Button
@@ -10,4 +10,4 @@ const Button = () => {
 };
 
 
-export default Button;
+export default Buttons;
