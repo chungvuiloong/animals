@@ -2,6 +2,7 @@ import './App.css';
 import Cards from './Components/Cards';
 import animals from './Animals.js';
 import React, { Component } from "react";
+import PlaySound from './PlaySound.js';
 
 // src={`https://source.unsplash.com/1600x900/?${props.title}`}
 
@@ -38,7 +39,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <PlaySound/>
         {this.state.animals.map((animal) => (
+          
           <Cards 
             key={animal.name}
             images={animal.images} 
