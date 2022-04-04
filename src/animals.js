@@ -91,6 +91,7 @@ const animals = [
   { name: 'porcupine', likes: 0 },
   { name: 'porpoise', likes: 0 },
   { name: 'prairie-dog', likes: 0 },
+  { name: 'quokka', likes: 0 },
   { name: 'rabbit', likes: 0 },
   { name: 'raccoon', likes: 0 },
   { name: 'ram', likes: 0 },
