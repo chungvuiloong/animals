@@ -1,6 +1,6 @@
 import React, {useState } from 'react';
 import Sound from 'react-sound';
-// import {song} from '../Component/song.mp3';
+// import {song} from './song.mp3';
 
  const PlaySound = (handleSongLoading, handleSongPlaying, handleSongFinishedPlaying) => {
     const [isPlaying, setIsPlaying] = useState(false);

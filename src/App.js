@@ -9,6 +9,7 @@ import PlaySound from './PlaySound.js';
 class App extends Component {
   state = {
     animals: animals,
+    search: ''
   };
 
  
@@ -35,14 +36,28 @@ class App extends Component {
     console.log(this.state);
   };
 
+  searchHandler =(e) => {
+    this.setState({search: e.target.value});
+  }
+
 
   render() {
+
+    const animalFilter = this.state.animals.filter((animal)=>{
+      return animal.name.toLowerCase().includes(this.state.search.toLowerCase());
+    });
+
     return (
       <div className="App">
         <PlaySound/>
+        {/* <h1>{this.state.animals.length} animals</h1> */}
+        <h1>{animals.length} animals</h1>
+        <input type="text" onChange={this.searchHandler}/>
+        <h3>{this.state.search}</h3>
         {this.state.animals.map((animal) => (
           
           <Cards 
+            search={this.state.search}
             key={animal.name}
             images={animal.images} 
             name={animal.name}

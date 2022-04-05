@@ -5,6 +5,7 @@ import React from "react";
 const Cards = (props) => {
     return (
         <div className={classes.container}>
+            <h3>{props.search}</h3>
             <button className="remove" onClick={props.remove}>X</button>
             <img className="imageContainer" alt={props.name} src={`https://source.unsplash.com/1280x720/?${props.name}`}></img>
             <div>{props.name}</div>
