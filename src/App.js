@@ -62,8 +62,6 @@ class App extends Component {
             images={animal.images} 
             name={animal.name}
             like={animal.likes}
-            // remove={() => this.parent(animal.name).remove()}
-            // remove={() => this.removeHandler(animal.name)}
             remove={this.removeHandler.bind(this, animal.name)}
 
             add={() => this.addLikeHandler(animal.name)}

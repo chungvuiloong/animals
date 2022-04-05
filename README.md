@@ -1,6 +1,7 @@
 # Animals app
 
 This project display arrays of animals and with functional delete and like button.
+5th April - added search bar and applying serach functionality.
 
 # Getting Started with Create React App
 
