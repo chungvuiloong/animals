@@ -50,8 +50,8 @@ class App extends Component {
     return (
       <div className="App">
         <PlaySound/>
-        {/* <h1>{this.state.animals.length} animals</h1> */}
-        <h1>{animals.length} animals</h1>
+        <h1>{this.state.animals.length} animals</h1>
+        {/* <h1>{animals.length} animals</h1> */}
         <input type="text" onChange={this.searchHandler}/>
         <h3>{this.state.search}</h3>
         {this.state.animals.map((animal) => (
